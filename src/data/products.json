@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Monitor",
+        "description": "Monitor HD 1080p 24 pulgadas",
+        "price": 1500,
+        "stock": 25,
+        "code": "L123",
+        "thumbnail": [],
+        "id": "1747ea8e4b47e46934ba",
+        "img": ""
+    },
+    {
+        "title": "Teclado",
+        "description": "Teclado mecanico retroiluminado",
+        "price": 2500,
+        "stock": 15,
+        "code": "L124",
+        "thumbnail": [],
+        "id": "1747ea8e4b47e46934bb",
+        "img": "https://f.fcdn.app/imgs/f746aa/www.zonatecno.com.uy/zoteuy/e5b4/original/catalogo/102804_102804_1/460x460/celular-xiaomi-redmi-note-12-128gb-4gb-ice-blue-ds-celular-xiaomi-redmi-note-12-128gb-4gb-ice-blue-ds.jpg"
+    },
+    {
+        "title": "Mouse",
+        "description": "Mouse inalambrico",
+        "price": 1000,
+        "stock": 20,
+        "code": "L125",
+        "thumbnail": [],
+        "id": "1747ea8e4b47e46934bc",
+        "img": ""
+    },
+    {
+        "title": "Auriculares",
+        "description": "Auriculares inalambricos",
+        "price": 3000,
+        "stock": 10,
+        "code": "L126",
+        "thumbnail": [],
+        "id": "1747ea8e4b47e46934bd",
+        "img": ""
+    },
+    {
+        "title": "Parlantes",
+        "description": "Parlantes 2.1",
+        "price": 2000,
+        "stock": 5,
+        "code": "L127",
+        "thumbnail": [],
+        "id": "1747ea8e4b47e46934be",
+        "img": ""
+    }   
+]
