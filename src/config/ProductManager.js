@@ -4,7 +4,7 @@ import crypto from 'crypto'
 
 export class ProductManager {
     constructor(path) {
-        this.path = path
+        this.path = path //./products.json
     }
 
     //Añado un producto
@@ -39,7 +39,7 @@ export class ProductManager {
     }
 
     //Traigo un producto segun su id
-    async getProductsById(id) {
+    async getProductById(id) { //getProductsById cambio a getProductById
         const products = JSON.parse(await fs.readFile(this.path, 'utf-8'))
         const prod = products.find((p) => p.id === id)
         if (prod) {

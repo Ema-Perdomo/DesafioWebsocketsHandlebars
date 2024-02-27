@@ -2,7 +2,7 @@ import {promises as fs} from 'fs';
 
 export class CartManager {
     constructor(path) {
-        this.products = path
+        this.products = path//this.products cambio a this.path
     }
     
     async getCart() {

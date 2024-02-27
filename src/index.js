@@ -1,5 +1,5 @@
 import express from 'express';
-import cartRouter from '../routes/cartRouter.js';
+import CartRouter from '../routes/CartRouter.js';
 import productsRouter from '../routes/ProductsRouter.js';
 import upload from './config/multer.js';
 import { Server } from 'socket.io';
@@ -39,7 +39,7 @@ io.on('connection', (socket) => {
         //Cliente que envió este mensaje
         socket.emit('mensaje-jugador', 'Te has rendido')
         //broadcast envia a todos los clientes con comunicacion establecida con el server
-        socket.broadcast.emit('rendicion', 'El jugador se rindió')
+        io.emit('rendicion', 'El jugador se rindió') // Cambio de socket.broadcast.emit a io.emit
 
     })
 })
@@ -47,7 +47,7 @@ io.on('connection', (socket) => {
 //Router
 app.use('/static', express.static(__dirname + '/public'))
 app.use('/api/products', productsRouter,  express.static(__dirname + '/public'))
-app.use('/api/cart', cartRouter)
+app.use('/api/cart', CartRouter)
 //Carga de imagenes
 app.post('/upload', upload.single('product'), (req, res) => {
 

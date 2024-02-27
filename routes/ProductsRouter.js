@@ -33,7 +33,7 @@ productsRouter.get('/', async (req, res) => {
 productsRouter.get('/:idProd', async (req, res) => {
     try {
         const idProducto = req.params.idProd
-        const prod = await productManager.getProductsById(idProducto)
+        const prod = await productManager.getProductById(idProducto) // getProductsById cambio a getProductById
         if (prod)
             res.status(200).send(prod)
         else
